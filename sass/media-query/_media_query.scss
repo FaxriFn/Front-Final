@@ -1,0 +1,41 @@
+@media screen and (max-width:1200px){
+    .menu{
+        display: none;
+    }
+    .media-1033{
+        text-align: center !important;
+        padding-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+ 
+
+ 
+}
+@media screen and (max-width:992px){
+ 
+.burger{
+    display: block !important;
+}
+ 
+}
+@media screen and (max-width:576px){
+
+    .header-top,.menu{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+  
+ }
+ @media screen and (max-width:1388px){
+ 
+    .search-basket {
+ 
+        right: 19px!important;
+}
+ 
+}
