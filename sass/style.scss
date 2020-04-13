@@ -3,9 +3,21 @@
 
 // Pages
 @import "pages/home";
-@import "components/header_top";
-@import "components/header_nav";
+
 
 
 // Media Query
 @import "media-query/media_query";
+
+// Section Medical Center
+@import "components/medicalCenter";
+@import "components/medicalCounter";
+
+// Professional Doctor
+@import "components/professionalDoctor";
+
+// Card Doctor
+@import "components/cardDoctor";
+
+// Testimonials
+@import "components/testimonialsContainer";

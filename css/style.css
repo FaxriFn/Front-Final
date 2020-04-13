@@ -227,256 +227,419 @@ body {
   margin: 0;
 }
 
-header {
-  min-height: 137px;
-}
-
-header .header-top {
-  background: #3f3f3f;
-  color: #d5d5d5;
-  font-size: 12px;
-  line-height: 24px;
-  font-family: Poppins;
-}
-
-header .header-top .container {
-  width: 1400px;
-  max-width: 100%;
-}
-
-header .header-top .container .contact-us {
-  text-transform: uppercase;
-  position: relative;
-  z-index: 9999;
-  color: #d5d5d5;
-  font-size: 12px;
-  line-height: 24px;
-  padding: 12px 0;
-}
-
-header .header-top .container .contact-us span {
-  padding-right: 36px;
-}
-
-header .header-top .container .contact-us i {
-  font-size: 16px;
-  padding-right: 12px;
-}
-
-header .header-top .container .social-media {
-  padding-top: 13px;
-}
-
-header .header-top .container .social-media a {
-  color: #d5d5d5;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 13px;
-  display: inline-block;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  padding: 0 9.5px;
-  color: inherit;
-}
-
-.dropdown-toggle::after {
-  content: initial;
-}
-
-.nav-active {
-  color: #007df2 !important;
-}
-
-@-webkit-keyframes animation {
-  from {
-    top: 120px;
+@media screen and (max-width: 1024px) {
+  .medicalCenterText {
+    padding-left: 219.5px !important;
+    height: 100%;
   }
-  to {
-    top: 100%;
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+  }
+  .medicalCounter {
+    margin-top: initial !important;
   }
 }
 
-@keyframes animation {
-  from {
-    top: 120px;
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .cardTestimonials {
+    padding: 0 15px 46px;
   }
-  to {
-    top: 100%;
+  .medicalCenterCount {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .medicalCounter {
+    margin-top: 0px !important;
+  }
+  .medicalCenterText {
+    padding-left: 201.5px !important;
+    height: 100%;
+  }
+  .medicalCenterText ul li {
+    padding-right: 35px !important;
+  }
+  .medicalCenterCount .counter-wrap1:last-child {
+    display: none !important;
   }
 }
 
-nav {
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 8px rgba(7, 7, 7, 0.11);
-          box-shadow: 0px 0px 8px rgba(7, 7, 7, 0.11);
-  height: 95px;
+@media screen and (max-width: 1024px) and (max-width: 576px) {
+  .medicalCenterImg {
+    display: none;
+  }
+  .memberArrow {
+    margin-top: 0px !important;
+  }
+  .cmsCounterTitle {
+    padding-bottom: 50px !important;
+  }
+  .medicalCenterCount .counter-wrap1:last-child {
+    display: block !important;
+  }
+  .medicalCounter {
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .medicalCenterText {
+    padding-left: 201.5px !important;
+    height: 100%;
+  }
+}
+
+.col-sm-6, .col-lg-6 {
+  padding: 0px;
+}
+
+.medicalCenterContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  background-color: #f5f5f5;
+  width: 100%;
+  position: relative;
+}
+
+.medicalCenterContainer .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText {
+  padding-left: 191.5px;
+  padding-top: 79px;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText h2 {
+  font-size: 36px;
+  color: #303030;
+  line-height: 52px;
+  text-align: inherit;
+  margin: 0 0 15px;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText .color-default {
+  color: #007df2;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText .subTitle {
+  font-size: 15px;
+  line-height: 26px;
+  color: #888888;
+  margin: 0 0 15px;
+  margin-bottom: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 15px;
+  width: 100% !important;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 24px;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText ul li {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 14px;
+  font-weight: 600;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterText ul li i {
+  color: #007df2;
+  padding-right: 28px;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.medicalCenterContainer .container-fluid .medicalCenterImg .medicalImg img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.medicalCounter {
+  width: 100%;
+  margin-top: -105px;
+}
+
+.medicalCounter .medicalCenterCount {
+  padding-top: 92px !important;
+  padding-bottom: 65px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-shadow: 8px 0 62px rgba(48, 48, 48, 0.16);
+          box-shadow: 8px 0 62px rgba(48, 48, 48, 0.16);
+  background-color: #fff;
+  overflow: hidden !important;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  color: #007df2;
+  display: inline-block;
+  position: relative;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .subDigit, .medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .subDigit-end, .medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .subDigit-percent {
+  display: inline-block;
+  position: absolute;
+  left: 130px;
+  top: -9px;
+  font-size: 28px;
+  color: #007df2;
+  font-weight: 400;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .subDigit-percent {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  color: #007df2;
+  top: 0px;
+  left: 95px;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .subDigit-end {
+  left: 60px;
+  top: -9px;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .cmsCcounter {
+  padding-bottom: 20px;
+}
+
+.medicalCounter .medicalCenterCount .counter-wrap1 .counter-digit-wrap .cmsCounterTitle span {
+  color: #888;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: Poppins;
+  line-height: 26px;
+}
+
+.professionalDoctor {
+  width: 70%;
+  margin: auto;
+}
+
+.professionalDoctor .professionalDoctorRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-nav .container {
-  width: 1400px;
-  max-width: 100%;
+.professionalDoctor .professionalDoctorRow .professionalDoctorTitle {
+  padding-top: 79px !important;
+  padding-bottom: 4px !important;
 }
 
-nav .container .row .logo {
-  max-width: 150px;
+.professionalDoctor .professionalDoctorRow .professionalDoctorTitle strong {
+  font-size: 14px;
+  color: #007df2;
+  letter-spacing: 0.2em;
+}
+
+.professionalDoctor .professionalDoctorRow .memberArrow {
+  margin-top: 46px;
+}
+
+.professionalDoctor .professionalDoctorRow .memberArrow:hover {
+  text-decoration: none;
+}
+
+.professionalDoctor .professionalDoctorRow .memberArrow span {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-nav .container .row .logo img {
-  vertical-align: middle;
-  width: 100%;
-  display: inline-block;
-  line-height: 140px;
-  vertical-align: middle;
-  height: 44px;
+.professionalDoctor .professionalDoctorRow .memberArrow i {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 30px;
+  position: relative;
+  color: #007df2;
+  top: 17px;
+  margin-left: 6px;
 }
 
-nav .container .row .nav-right .menu ul {
-  list-style: none;
+.cardDoctor {
+  padding: 50px 10px 47px;
+  background: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(48, 48, 48, 0.1);
+          box-shadow: 0 0 10px rgba(48, 48, 48, 0.1);
+  -webkit-transition: .6s;
+  transition: .6s;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cardDoctor .doctorContent {
+  position: relative;
+}
+
+.cardDoctor .doctorContent .doctorImg {
+  text-align: center;
+}
+
+.cardDoctor .doctorContent .doctorName {
+  text-align: center;
+}
+
+.cardDoctor .doctorContent .doctorName h4 {
+  margin: 0 0 15px;
+  padding-top: 41px;
+  font-family: 'Poppins';
+}
+
+.cardDoctor .doctorContent .doctorName h4 a {
+  text-decoration: none;
+  color: #303030;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  margin-bottom: 7px;
+}
+
+.cardDoctor .doctorContent .doctorName span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+}
+
+.cardDoctor .doctorContent .socialIconDoctor {
+  text-align: center;
+  padding-top: 21px;
+  cursor: pointer;
+}
+
+.cardDoctor .doctorContent .socialIconDoctor i {
+  padding-right: 15px;
+  color: #007df2;
+}
+
+.testimonialsContainer {
+  padding-top: 82px;
+  background-color: #f5f5f5 !important;
+  position: relative;
+}
+
+.testimonialsContainer .testimonialsTitle h6 {
+  color: #007df2;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.testimonialsContainer .testimonialsTitle h2 {
+  font-size: 36px;
+  line-height: 52px;
+  color: #303030;
+  font-weight: 600;
+  padding-bottom: 27px;
+}
+
+.testimonialsContainer .testimonialsSlider {
+  max-width: 500px;
+  padding: 20px 15px;
+}
+
+.testimonialsContainer .testimonialsSlider .cardTestimonials {
+  display: inline-block;
+  background-color: #fff;
+  padding: 50px 44px;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: ew-resize;
+}
+
+.testimonialsContainer .testimonialsSlider .cardTestimonials p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #888;
+}
+
+.testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 21px;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-nav .container .row .nav-right .menu .nav-item {
-  margin-left: 30px;
-  font-size: 14px;
-}
-
-nav .container .row .nav-right .menu .nav-item .nav-link {
-  color: Black;
-  position: relative;
-  padding: 32px 0;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-nav .container .row .nav-right .menu .nav-item .nav-link:hover {
-  color: #007df2;
-}
-
-nav .container .row .nav-right .menu .nav-item .dropdown-menu {
-  border-radius: 0;
-  -webkit-animation-name: animation;
-          animation-name: animation;
-  -webkit-animation-duration: .3s;
-          animation-duration: .3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  border-bottom: #007df2 solid 4px;
-  background: #fff;
-  left: -30px;
-}
-
-nav .container .row .nav-right .menu .nav-item .dropdown-menu .dropdown-item {
-  display: block;
-  line-height: 33px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-nav .container .row .nav-right .menu .nav-item .dropdown-menu .dropdown-item:hover {
-  background-color: white;
-  color: #007df2;
-}
-
-nav .container .row .nav-right .menu .nav-item .menu-home {
-  padding: 20px;
-}
-
-nav .container .row .nav-right .search-basket {
-  position: absolute;
-  right: -25px;
-}
-
-nav .container .row .nav-right .search-basket .search,
-nav .container .row .nav-right .search-basket .shopping-cart {
-  margin-right: 10px;
-  font-size: 21px;
-  margin-right: 21px;
-  cursor: pointer;
-  color: #303030;
-}
-
-nav .container .row .nav-right .search-basket .shopping-cart {
-  position: relative;
-  cursor: pointer;
-  padding-right: 15px;
-}
-
-nav .container .row .nav-right .search-basket .shopping-cart .shopping-count {
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  background: #007df2;
+.testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent img {
+  max-width: 65px;
   border-radius: 50%;
-  color: #ebebeb;
-  font-size: 10px;
-  text-align: center;
-  left: 18px;
-  top: -12px;
-  line-height: 17px;
-  -webkit-transition: all 300ms linear 0ms;
-  transition: all 300ms linear 0ms;
-  cursor: pointer;
 }
 
-nav .container .row .nav-right .search-basket .burger {
-  font-size: 21px;
-  margin-right: 21px;
-  color: black;
-  cursor: pointer;
-  display: none;
+.testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent .testimonialsText {
+  padding-left: 35px;
 }
 
-nav .container .row .nav-right .search-basket .burger:hover {
+.testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent .testimonialsText h5 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 3px;
+}
+
+.testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent .testimonialsText p {
+  font-weight: 400;
+  color: #888;
+}
+
+.testimonialsContainer .testimonialsSlider .cardTestimonials i {
+  position: absolute;
+  right: 29px;
   color: #007df2;
+  font-size: 22px;
+  bottom: 59px;
 }
 
-@media screen and (max-width: 1200px) {
-  .menu {
-    display: none;
-  }
-  .media-1033 {
-    text-align: center !important;
-    padding-bottom: 5px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .burger {
-    display: block !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .header-top, .menu {
-    display: none;
-  }
-  .search {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1388px) {
-  .search-basket {
-    right: 19px !important;
-  }
+.slick-prev,
+.slick-next {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

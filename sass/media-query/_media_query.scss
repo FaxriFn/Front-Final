@@ -1,41 +1,81 @@
-@media screen and (max-width:1200px){
-    .menu{
+@media screen and (max-width:1024px) {
+
+    .medicalCenterText {
+        padding-left: 219.5px !important;
+        height: 100%;
+    }
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow-x: hidden;
+    }
+    .medicalCounter {
+        margin-top: initial !important;
+
+}
+
+@media screen and (max-width:768px) {
+
+    .cardTestimonials {
+        padding: 0 15px 46px;}
+
+    .medicalCenterCount {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    
+    .medicalCounter {
+        margin-top: 0px !important;
+    }
+    .medicalCenterText {
+        padding-left: 201.5px !important;
+        height: 100%;
+    }
+
+    .medicalCenterText ul li {
+      padding-right: 35px !important;
+        
+    }
+
+    .medicalCenterCount .counter-wrap1:last-child {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+}
+
+@media screen and (max-width:576px) {
+
+    .medicalCenterImg {
         display: none;
     }
-    .media-1033{
-        text-align: center !important;
-        padding-bottom: 5px;
+    .memberArrow{
+        margin-top:0px !important;
     }
 
-}
-
-@media screen and (max-width:768px){
- 
-
- 
-}
-@media screen and (max-width:992px){
- 
-.burger{
-    display: block !important;
-}
- 
-}
-@media screen and (max-width:576px){
-
-    .header-top,.menu{
-        display: none;
+    .cmsCounterTitle {
+        padding-bottom: 50px !important;
     }
-    .search{
-        display: none;
+
+    .medicalCenterCount .counter-wrap1:last-child {
+        display: block !important;
     }
-  
- }
- @media screen and (max-width:1388px){
- 
-    .search-basket {
- 
-        right: 19px!important;
+
+    .medicalCounter {
+        margin-top: 0px !important;
+    }
+
+
 }
- 
+}
+@media screen and(max-width:332px){
+    .medicalCenterText {
+        padding-left: 201.5px !important;
+        height: 100%;
+    }
 }
