@@ -242,9 +242,13 @@ body {
   .medicalCounter {
     margin-top: initial !important;
   }
+  .professionalDoctor {
+    width: 70% !important;
+    margin: auto;
+  }
 }
 
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .cardTestimonials {
     padding: 0 15px 46px;
   }
@@ -270,12 +274,16 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .medicalCenterImg {
     display: none;
   }
-  .memberArrow {
-    margin-top: 0px !important;
+  .medicalCounter {
+    margin-top: 46px !important;
+  }
+  .medicalCenterText h2 {
+    font-size: 30px;
+    line-height: 40px;
   }
   .cmsCounterTitle {
     padding-bottom: 50px !important;
@@ -283,15 +291,24 @@ body {
   .medicalCenterCount .counter-wrap1:last-child {
     display: block !important;
   }
-  .medicalCounter {
-    margin-top: 0px !important;
-  }
 }
 
 @media screen and (max-width: 332px) {
   .medicalCenterText {
     padding-left: 201.5px !important;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .professionalDoctor {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .testimonialsSlider {
+    width: 430px !important;
   }
 }
 
@@ -513,6 +530,7 @@ body {
 }
 
 .cardDoctor .doctorContent {
+  width: 100%;
   position: relative;
 }
 
@@ -582,7 +600,7 @@ body {
 }
 
 .testimonialsContainer .testimonialsSlider {
-  max-width: 500px;
+  max-width: 450px;
   padding: 20px 15px;
 }
 

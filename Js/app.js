@@ -1,6 +1,10 @@
 $(function () {
 
-
+    $('.count_nums').counterUp({
+        delay: 10,
+        time: 5000
+    });
+    
  
     $(document).on('mouseenter','.cardDoctor',function(){
         $(this).css('background', 'rgba(0, 125, 242, 1)');
@@ -75,10 +79,7 @@ $(function () {
         });
 
     // Count Plugin
-    $('.count_nums').counterUp({
-        delay: 20,
-        time: 2000
-    });
+
     AOS.init({
         delay: 1000,
 
