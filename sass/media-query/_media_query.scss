@@ -1,9 +1,6 @@
 @media screen and (max-width:1024px) {
 
-    .medicalCenterText {
-        padding-left: 219.5px !important;
-        height: 100%;
-    }
+
     .container {
         padding-right: 0px;
         padding-left: 0px;
@@ -19,7 +16,10 @@
     width: 70% !important;
    margin: auto;
 }
-
+.medicalCenterText {
+    width: 100% !important;
+    margin: initial !important;
+}
 }
 @media screen and (max-width:768px) {
 
@@ -35,30 +35,34 @@
     .medicalCounter {
         margin-top: 0px !important;
     }
-    .medicalCenterText {
-        padding-left: 201.5px !important;
-        height: 100%;
+    .medicalCenterImg{
+        display: none !important;
+    
     }
+}
 
-    .medicalCenterText ul li {
-      padding-right: 35px !important;
-        
-    }
 
     .medicalCenterCount .counter-wrap1:last-child {
         display: none !important;
     }
+    .lastestNewsTitle{
+        display: block !important;
+          justify-content: initial !important;
+    }
 
-}
+ 
+
 
 @media screen and (max-width:992px) {
 }
 
 @media screen and (max-width:576px) {
 
-    .medicalCenterImg {
+    .medicalCenterImg{
         display: none;
+
     }
+
     .medicalCounter {
         margin-top: 46px !important;
        
@@ -80,10 +84,7 @@
 }
 
 @media screen and(max-width:332px){
-    .medicalCenterText {
-        padding-left: 201.5px !important;
-        height: 100%;
-    }
+ 
   
 }
 

@@ -1,0 +1,79 @@
+.lastestNewsContainer {
+    padding-top: 50px;
+    width: 75%;
+    margin: auto;
+
+    .lastestNewsTitle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+
+        h2 {
+            margin: 0 0 15px;
+            color: #303030;
+            font-family: Poppins;
+            font-weight: 600;
+        }
+
+        .memberArrow {
+            span {
+                color: #303030;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            i {
+                font-weight: 600;
+                font-size: 56px;
+                line-height: 30px;
+                position: relative;
+                color: rgba(0, 125, 242, 1);
+                top: 17px;
+                margin-left: 6px;
+            }
+        }
+
+        // 
+
+
+    }
+
+    .lastestNewsSlider {
+        width: initial;
+
+        .lastestNewsCard {
+            p {
+                margin-top: 20px;
+                padding-right: 10px;
+
+                &:hover {
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                line-height: 26px;
+
+                padding-top: 13px;
+
+                &:hover {
+                    color: $content-color;
+                }
+            }
+        }
+    }
+}
+
+
+.slick-slide {
+    width: 366.667px !important;
+    margin-right: 30px;
+    overflow-y: hidden !important;
+}

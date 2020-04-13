@@ -1,8 +1,8 @@
 $(function () {
 
     $('.count_nums').counterUp({
-        delay: 10,
-        time: 5000
+        delay: 30,
+        time: 3000
     });
     
  
@@ -84,4 +84,20 @@ $(function () {
         delay: 1000,
 
     });
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false
+            }
+          },
+        ]
+      });
 });

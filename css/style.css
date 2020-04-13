@@ -228,10 +228,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .medicalCenterText {
-    padding-left: 219.5px !important;
-    height: 100%;
-  }
   .container {
     padding-right: 0px;
     padding-left: 0px;
@@ -245,6 +241,10 @@ body {
   .professionalDoctor {
     width: 70% !important;
     margin: auto;
+  }
+  .medicalCenterText {
+    width: 100% !important;
+    margin: initial !important;
   }
 }
 
@@ -262,16 +262,20 @@ body {
   .medicalCounter {
     margin-top: 0px !important;
   }
-  .medicalCenterText {
-    padding-left: 201.5px !important;
-    height: 100%;
-  }
-  .medicalCenterText ul li {
-    padding-right: 35px !important;
-  }
-  .medicalCenterCount .counter-wrap1:last-child {
+  .medicalCenterImg {
     display: none !important;
   }
+}
+
+.medicalCenterCount .counter-wrap1:last-child {
+  display: none !important;
+}
+
+.lastestNewsTitle {
+  display: block !important;
+  -webkit-box-pack: initial !important;
+      -ms-flex-pack: initial !important;
+          justify-content: initial !important;
 }
 
 @media screen and (max-width: 576px) {
@@ -293,13 +297,6 @@ body {
   }
 }
 
-@media screen and (max-width: 332px) {
-  .medicalCenterText {
-    padding-left: 201.5px !important;
-    height: 100%;
-  }
-}
-
 @media screen and (max-width: 1260px) {
   .professionalDoctor {
     width: 100% !important;
@@ -312,11 +309,8 @@ body {
   }
 }
 
-.col-sm-6, .col-lg-6 {
-  padding: 0px;
-}
-
 .medicalCenterContainer {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,48 +321,51 @@ body {
   position: relative;
 }
 
-.medicalCenterContainer .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-  margin: 0px;
-}
-
-.medicalCenterContainer .container-fluid .medicalCenterText {
-  padding-left: 191.5px;
+.medicalCenterContainer .medicalCenterText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 27%;
+  margin: auto;
   padding-top: 79px;
+  max-width: 100%;
+  text-align: center;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterText h2 {
+.medicalCenterContainer .medicalCenterText h2 {
   font-size: 36px;
   color: #303030;
   line-height: 52px;
   text-align: inherit;
-  margin: 0 0 15px;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterText .color-default {
+.medicalCenterContainer .medicalCenterText .color-default {
   color: #007df2;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterText .subTitle {
+.medicalCenterContainer .medicalCenterText .subTitle {
   font-size: 15px;
   line-height: 26px;
   color: #888888;
-  margin: 0 0 15px;
+  width: 100px !important;
   margin-bottom: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 15px;
   width: 100% !important;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterText ul {
+.medicalCenterContainer .medicalCenterText ul {
   list-style: none;
-  padding: 0;
+  text-align: center;
   padding-top: 24px;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterText ul li {
+.medicalCenterContainer .medicalCenterText ul li {
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,16 +374,18 @@ body {
   font-weight: 600;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterText ul li i {
+.medicalCenterContainer .medicalCenterText ul li i {
   color: #007df2;
   padding-right: 28px;
   font-style: normal;
   font-size: 12px;
 }
 
-.medicalCenterContainer .container-fluid .medicalCenterImg .medicalImg img {
-  max-width: 100%;
-  height: 100%;
+.medicalCenterContainer .medicalCenterImg {
+  width: 50%;
+}
+
+.medicalCenterContainer .medicalCenterImg .medicalImg img {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -659,5 +658,81 @@ body {
 .slick-prev,
 .slick-next {
   display: none !important;
+}
+
+.lastestNewsContainer {
+  padding-top: 50px;
+  width: 75%;
+  margin: auto;
+}
+
+.lastestNewsContainer .lastestNewsTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.lastestNewsContainer .lastestNewsTitle h2 {
+  margin: 0 0 15px;
+  color: #303030;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.lastestNewsContainer .lastestNewsTitle .memberArrow span {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lastestNewsContainer .lastestNewsTitle .memberArrow i {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 30px;
+  position: relative;
+  color: #007df2;
+  top: 17px;
+  margin-left: 6px;
+}
+
+.lastestNewsContainer .lastestNewsSlider {
+  width: initial;
+}
+
+.lastestNewsContainer .lastestNewsSlider .lastestNewsCard p {
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+.lastestNewsContainer .lastestNewsSlider .lastestNewsCard p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.lastestNewsContainer .lastestNewsSlider .lastestNewsCard a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 13px;
+}
+
+.lastestNewsContainer .lastestNewsSlider .lastestNewsCard a:hover {
+  color: #007df2;
+}
+
+.slick-slide {
+  width: 366.667px !important;
+  margin-right: 30px;
+  overflow-y: hidden !important;
 }
 /*# sourceMappingURL=style.css.map */
