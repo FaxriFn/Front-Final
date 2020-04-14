@@ -2,11 +2,11 @@
     padding-top: 50px;
     width: 75%;
     margin: auto;
-
+    overflow-x: hidden;
     .lastestNewsTitle {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+      
         flex-wrap: wrap;
         padding-bottom: 50px;
 
@@ -42,8 +42,9 @@
     }
 
     .lastestNewsSlider {
-        width: initial;
-
+    max-width: 500px !important;;
+        // padding-right: 57px;
+        overflow: hidden !important;
         .lastestNewsCard {
             p {
                 margin-top: 20px;
@@ -71,9 +72,14 @@
     }
 }
 
-
-.slick-slide {
-    width: 366.667px !important;
-    margin-right: 30px;
-    overflow-y: hidden !important;
+.owl-nav{
+    display: none;
+}
+ .owl-dots {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: red;
+    color: red;
 }

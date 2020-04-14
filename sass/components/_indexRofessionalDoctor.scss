@@ -1,16 +1,19 @@
 
 
     .professionalDoctor{
-    width: 70%;
-    margin: auto;
-    
+        padding-top: 50px;
+        width: 75% ;
+        margin: auto;
+        // overflow-x: hidden;
+  
     
        .professionalDoctorRow{
+      
         display: flex;
-        justify-content: space-between !important;
-        align-items: center;
+        justify-content: space-around   ;
+        align-items: baseline;
         flex-wrap: wrap;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
         .professionalDoctorTitle{
             padding-top: 79px !important;
             padding-bottom: 4px !important;
@@ -23,7 +26,7 @@
          }
         }
         .memberArrow{
-            margin-top: 46px;
+            // margin-top: 46px;
             
                 &:hover{
                     text-decoration: none;

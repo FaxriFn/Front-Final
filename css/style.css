@@ -228,6 +228,9 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .medicalCenterImg {
+    overflow: hidden !important;
+  }
   .container {
     padding-right: 0px;
     padding-left: 0px;
@@ -239,7 +242,7 @@ body {
     margin-top: initial !important;
   }
   .professionalDoctor {
-    width: 70% !important;
+    width: 94% !important;
     margin: auto;
   }
   .medicalCenterText {
@@ -253,10 +256,10 @@ body {
     padding: 0 15px 46px;
   }
   .medicalCenterCount {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: center;
   }
   .medicalCounter {
@@ -265,17 +268,26 @@ body {
   .medicalCenterImg {
     display: none !important;
   }
-}
-
-.medicalCenterCount .counter-wrap1:last-child {
-  display: none !important;
-}
-
-.lastestNewsTitle {
-  display: block !important;
-  -webkit-box-pack: initial !important;
-      -ms-flex-pack: initial !important;
-          justify-content: initial !important;
+  .lastestNewsSlider {
+    overflow: hidden !important;
+  }
+  .medicalCenterCount .counter-wrap1:last-child {
+    display: none !important;
+  }
+  .lastestNewsTitle, .professionalDoctorRow {
+    display: block !important;
+    -webkit-box-pack: initial !important;
+        -ms-flex-pack: initial !important;
+            justify-content: initial !important;
+  }
+  .testimonialsTitle h2 {
+    font-size: 24px !important;
+    line-height: 40px !important;
+  }
+  .professionalDoctorRow {
+    width: 86% !important;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -295,6 +307,13 @@ body {
   .medicalCenterCount .counter-wrap1:last-child {
     display: block !important;
   }
+  .medicalCenterCount {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -307,10 +326,19 @@ body {
   .testimonialsSlider {
     width: 430px !important;
   }
+  .testimonialsTitle h2 {
+    font-size: 20px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .professionalDoctor {
+    width: 100% !important;
+  }
 }
 
 .medicalCenterContainer {
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,6 +421,7 @@ body {
 .medicalCounter {
   width: 100%;
   margin-top: -105px;
+  overflow-x: hidden;
 }
 
 .medicalCounter .medicalCenterCount {
@@ -461,7 +490,8 @@ body {
 }
 
 .professionalDoctor {
-  width: 70%;
+  padding-top: 50px;
+  width: 75%;
   margin: auto;
 }
 
@@ -469,15 +499,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .professionalDoctor .professionalDoctorRow .professionalDoctorTitle {
@@ -489,10 +518,6 @@ body {
   font-size: 14px;
   color: #007df2;
   letter-spacing: 0.2em;
-}
-
-.professionalDoctor .professionalDoctorRow .memberArrow {
-  margin-top: 46px;
 }
 
 .professionalDoctor .professionalDoctorRow .memberArrow:hover {
@@ -519,7 +544,6 @@ body {
 .cardDoctor {
   padding: 50px 10px 47px;
   background: white;
-  overflow: hidden;
   -webkit-box-shadow: 0 0 10px rgba(48, 48, 48, 0.1);
           box-shadow: 0 0 10px rgba(48, 48, 48, 0.1);
   -webkit-transition: .6s;
@@ -579,6 +603,7 @@ body {
   padding-top: 82px;
   background-color: #f5f5f5 !important;
   position: relative;
+  overflow-x: hidden;
 }
 
 .testimonialsContainer .testimonialsTitle h6 {
@@ -664,17 +689,16 @@ body {
   padding-top: 50px;
   width: 75%;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .lastestNewsContainer .lastestNewsTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 50px;
@@ -705,7 +729,8 @@ body {
 }
 
 .lastestNewsContainer .lastestNewsSlider {
-  width: initial;
+  max-width: 500px !important;
+  overflow: hidden !important;
 }
 
 .lastestNewsContainer .lastestNewsSlider .lastestNewsCard p {
@@ -730,9 +755,21 @@ body {
   color: #007df2;
 }
 
-.slick-slide {
-  width: 366.667px !important;
-  margin-right: 30px;
-  overflow-y: hidden !important;
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: red;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
